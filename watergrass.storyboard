@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ytM-oh-wqO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--後景草-->
+        <scene sceneID="zNC-ec-Gac">
+            <objects>
+                <viewController id="MJU-Wn-P7i" customClass="ViewController" customModule="aquarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZHj-r6-spK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="大莎草" translatesAutoresizingMaskIntoConstraints="NO" id="ea9-Yt-ohK">
+                                <rect key="frame" x="16" y="188" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="火花百葉" translatesAutoresizingMaskIntoConstraints="NO" id="asJ-be-zWo">
+                                <rect key="frame" x="16" y="258" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="越南細葉水芹" translatesAutoresizingMaskIntoConstraints="NO" id="y2q-bU-jtc">
+                                <rect key="frame" x="16" y="328" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陽明柳" translatesAutoresizingMaskIntoConstraints="NO" id="BRg-Dh-5Ou">
+                                <rect key="frame" x="16" y="398" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f1402e51d8ef39adf162e7cc03076f20" translatesAutoresizingMaskIntoConstraints="NO" id="nYk-nW-uqi">
+                                <rect key="frame" x="0.0" y="62" width="375" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOZ-nE-5gL">
+                                <rect key="frame" x="128" y="188" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="大莎草"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ai0-Fx-Dzl">
+                                <rect key="frame" x="128" y="258" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="火花百葉"/>
+                                <connections>
+                                    <segue destination="Z1D-d6-Vk4" kind="show" id="fFb-bU-Dk6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKq-Rf-Ssc">
+                                <rect key="frame" x="115" y="328" width="244" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="越南細葉水芹"/>
+                                <connections>
+                                    <segue destination="2UX-lu-XYp" kind="show" id="xIG-oc-Srd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gth-mP-udC">
+                                <rect key="frame" x="128" y="398" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="陽明柳"/>
+                                <connections>
+                                    <segue destination="NQk-2R-I2f" kind="show" id="zP2-vb-p6h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZzY-Vb-eCs">
+                                <rect key="frame" x="128" y="188" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="大莎草"/>
+                                <connections>
+                                    <segue destination="eIa-39-q80" kind="show" id="co0-iD-hmk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="bqT-Gq-cAP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="後景草" id="lj0-YG-h4G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q1d-UZ-3h4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1456.8" y="1262.5187406296852"/>
+        </scene>
+        <!--大沙草-->
+        <scene sceneID="btv-my-a8p">
+            <objects>
+                <viewController title="大沙草" id="eIa-39-q80" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uxj-QU-LIm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="大莎草" translatesAutoresizingMaskIntoConstraints="NO" id="r5j-ui-Mn3">
+                                <rect key="frame" x="0.0" y="81" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="f7J-5o-Eft">
+                                <rect key="frame" x="51" y="298" width="272" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">[台灣俗名]	大莎草
+[國際學名]	
+[種植難度]	★
+[魚缸建議尺寸]	1尺以上
+[ｐＨ]	6.0∼7.5
+[ｋＨ]	5∼13
+[ＧＨ]	4∼15
+[溫度]	21∼29度
+[施肥]	配合水草液肥以及螯合鐵肥使用
+[貼心叮嚀]	要說在生長栽培上不需要特別的照顧，又能夠有良好表現的草種，此顆莎草品種絕對是您的最佳選擇，不論是在國內外的比賽中都可以見其身影，搖曳的葉型與透徹的水色相得益彰，堪稱是造景中絕對不容錯過的一員！</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cpv-Hg-fcw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qj-Fv-LFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="840"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="bon-Hh-5ox">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ytM-oh-wqO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="大莎草" landscapeImage="水草" id="76S-q6-mxv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NWZ-Ms-PNg">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QhP-Gp-6zp" kind="relationship" relationship="rootViewController" id="TTt-n4-aue"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgM-vt-VbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1353" y="1263"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="clf-ep-5Dk">
+            <objects>
+                <viewController id="QhP-Gp-6zp" customClass="ViewController" customModule="aquarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="67B-Xa-ez2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="大莎草" translatesAutoresizingMaskIntoConstraints="NO" id="PWu-v1-nUh">
+                                <rect key="frame" x="16" y="104" width="343" height="301"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyi-dF-X6y">
+                                <rect key="frame" x="90" y="432" width="194" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="owp-io-O3b">
+                                <rect key="frame" x="56" y="432" width="262" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="水草">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3SK-d7-2oj" kind="show" id="Cu8-zX-z4M"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cwS-i3-xQQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vEw-9I-I1F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0I-kO-pyr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-577" y="1263"/>
+        </scene>
+        <!--火花百葉-->
+        <scene sceneID="cv8-C7-dDW">
+            <objects>
+                <viewController title="火花百葉" id="Z1D-d6-Vk4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="93D-9d-1Bf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="火花百葉" translatesAutoresizingMaskIntoConstraints="NO" id="Xtv-kt-7dh">
+                                <rect key="frame" x="0.0" y="81" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NQv-g4-vuc">
+                                <rect key="frame" x="51" y="298" width="272" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">[台灣俗名]	火花百葉
+[國際學名]	Pogostemon deccanensis
+[種植難度]	★★
+[魚缸建議尺寸]	1.5尺以上
+[ｐＨ]	6.5∼8
+[ｋＨ]	5∼12
+[ＧＨ]	5∼12
+[溫度]	25∼29度
+[施肥]	配合水草營養劑以及螯合鐵使用 （如有縮頂現象可以配合鈣肥改善）
+
+[貼心叮嚀]	葉質纖細且對於水質變化稍具敏感，在硬度較高的水質中栽培比較不會出現"縮頂"現象，強光下頂芽泛金黃色，建議搭配紅色系水草一同造景更顯特色，兩尺缸以上可以10株為一單位種植能夠獲得良好的視覺效果！</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Yo0-U5-lnE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zev-cE-wP0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3122" y="840"/>
+        </scene>
+        <!--越南細葉水芹-->
+        <scene sceneID="t8s-gu-oS3">
+            <objects>
+                <viewController title="越南細葉水芹" id="2UX-lu-XYp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vTN-tf-eLf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="越南細葉水芹" translatesAutoresizingMaskIntoConstraints="NO" id="zXJ-7Q-peM">
+                                <rect key="frame" x="0.0" y="81" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nVv-m2-oqd">
+                                <rect key="frame" x="51" y="298" width="272" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">[台灣俗名]	越南細葉水芹
+[國際學名]	Ceratoperis thalictroides from Vietnam
+[種植難度]	★
+[魚缸建議尺寸]	1尺以上
+[ｐＨ]	5.5∼7.5
+[ｋＨ]	0∼10
+[ＧＨ]	0∼10
+[溫度]	22∼32度
+[施肥]	配合水草液肥以及螯合鐵肥使用
+[貼心叮嚀]	比一般常見的水芹葉片更為修長，當作後景或中景草都有恰如其分的演出，遠看會有隨水流飄逸的動感，近看時會發現細長的羽狀裂葉在水中綻放著，即使沒有二氧化碳的加持也可以輕鬆栽培，是非常適合新手入門的少見草種。
+[單位數量]	七株</mutableString>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Nik-R7-Cyf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hhb-y8-C8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="1526"/>
+        </scene>
+        <!--陽明柳-->
+        <scene sceneID="67x-Ke-5tv">
+            <objects>
+                <viewController title="陽明柳" id="NQk-2R-I2f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gvR-rs-VZj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="陽明柳" translatesAutoresizingMaskIntoConstraints="NO" id="xgp-dz-jA7">
+                                <rect key="frame" x="0.0" y="81" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IQX-U2-WHI">
+                                <rect key="frame" x="51" y="298" width="272" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">[台灣俗名]	陽明柳
+[國際學名]	Najas graminea
+[種植難度]	★
+[魚缸建議尺寸]	1尺以上
+[ｐＨ]	5.0∼6.5
+[ｋＨ]	0∼6
+[ＧＨ]	0∼5
+[溫度]	22∼28度
+[施肥]	配合紅色水草液肥以及ECA精華露使用
+[貼心叮嚀]	曾經在台灣野外溝渠中即可看見的水族溢出種，如今隨著溝渠地下化以及水泥化已經難以復見，生長速度快速，可作為蝦缸中吸收多餘養分安定水質的好幫手！
+[單位數量]	一份</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ZDi-qH-Khr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9MP-YR-mIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3121" y="1525"/>
+        </scene>
+        <!--聖甲蟲-->
+        <scene sceneID="h1E-9V-d8R">
+            <objects>
+                <viewController title="聖甲蟲" id="EVl-hD-aZf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uha-Te-nCX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="聖甲蟲" translatesAutoresizingMaskIntoConstraints="NO" id="ZEC-Em-kF5">
+                                <rect key="frame" x="0.0" y="81" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wfQ-89-n2v">
+                                <rect key="frame" x="51" y="298" width="272" height="338"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">[台灣俗名]	聖甲蟲
+[國際學名]	Hygrophila Pinnatifida
+[種植難度]	★★
+[魚缸建議尺寸]	1.5尺以上
+[ｐＨ]	6.0∼7.8
+[ｋＨ]	3∼12
+[ＧＨ]	2∼15
+[溫度]	24∼33度
+[施肥]	配合水草營養劑以及螯合鐵使用
+[貼心叮嚀]	魚骨般的"深鋸齒"葉型，葉色變化隨著光線以及肥料從金黃∼深紅表現，即便是沒有二氧化碳的缸子也可栽培，初時乍看下有可能與同屬的鋸齒紫柳搞混，實際上是兩株截然不同的水草，在國外已可見到在兩棲造景缸上的使用！</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7hP-l4-Si9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBN-yz-UoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2449" y="2196"/>
+        </scene>
+        <!--水草-->
+        <scene sceneID="FQh-H4-t3g">
+            <objects>
+                <viewController id="3SK-d7-2oj" customClass="ViewController" customModule="aquarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hxg-Ey-bYC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="前景草" translatesAutoresizingMaskIntoConstraints="NO" id="e3M-VQ-GaC">
+                                <rect key="frame" x="16" y="129" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="中景草" translatesAutoresizingMaskIntoConstraints="NO" id="sk6-41-L14">
+                                <rect key="frame" x="16" y="199" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="後景草" translatesAutoresizingMaskIntoConstraints="NO" id="WQG-1A-s25">
+                                <rect key="frame" x="16" y="269" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f1402e51d8ef39adf162e7cc03076f20" translatesAutoresizingMaskIntoConstraints="NO" id="eOB-UP-yFf">
+                                <rect key="frame" x="0.0" y="3" width="375" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWc-eP-KQg">
+                                <rect key="frame" x="128" y="129" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="前景"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ah1-qv-SVT">
+                                <rect key="frame" x="128" y="199" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="中景"/>
+                                <connections>
+                                    <segue destination="KPy-So-UZG" kind="show" id="3qc-wJ-nzk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQD-2c-6jI">
+                                <rect key="frame" x="128" y="269" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="後景"/>
+                                <connections>
+                                    <segue destination="MJU-Wn-P7i" kind="show" id="vir-dG-VT3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="TN7-cs-Swd"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="水草" id="AkO-s0-LPV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsh-eQ-OJP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="441" y="1263"/>
+        </scene>
+        <!--中景草-->
+        <scene sceneID="j35-cT-j8A">
+            <objects>
+                <viewController id="KPy-So-UZG" customClass="ViewController" customModule="aquarium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C2w-Eg-l0U">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="聖甲蟲" translatesAutoresizingMaskIntoConstraints="NO" id="ffH-eq-HMf">
+                                <rect key="frame" x="16" y="188" width="91" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="f1402e51d8ef39adf162e7cc03076f20" translatesAutoresizingMaskIntoConstraints="NO" id="cJl-MW-LSM">
+                                <rect key="frame" x="0.0" y="62" width="375" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXi-jt-OAM">
+                                <rect key="frame" x="128" y="188" width="231" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                <state key="normal" title="聖甲蟲"/>
+                                <connections>
+                                    <segue destination="EVl-hD-aZf" kind="show" id="sas-0B-Fxt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Ety-cc-WVT"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="中景草" id="ECu-mR-n5c"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7t-Pa-GbN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1457" y="2060"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="f1402e51d8ef39adf162e7cc03076f20" width="910" height="277"/>
+        <image name="中景草" width="800" height="571"/>
+        <image name="前景草" width="251" height="200"/>
+        <image name="大莎草" width="255" height="255"/>
+        <image name="後景草" width="250" height="250"/>
+        <image name="水草" width="16" height="16"/>
+        <image name="火花百葉" width="705" height="502"/>
+        <image name="聖甲蟲" width="1600" height="1200"/>
+        <image name="越南細葉水芹" width="450" height="494"/>
+        <image name="陽明柳" width="600" height="398"/>
+    </resources>
+</document>

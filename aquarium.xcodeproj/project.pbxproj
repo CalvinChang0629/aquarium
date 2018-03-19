@@ -14,6 +14,10 @@
 		D9A7693A205F644900D807D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A76938205F644900D807D6 /* LaunchScreen.storyboard */; };
 		D9A76945205F644900D807D6 /* aquariumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A76944205F644900D807D6 /* aquariumTests.swift */; };
 		D9A76950205F644900D807D6 /* aquariumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A7694F205F644900D807D6 /* aquariumUITests.swift */; };
+		D9A7695F205F750B00D807D6 /* waterscape.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A7695D205F750B00D807D6 /* waterscape.storyboard */; };
+		D9A76961205F753200D807D6 /* fish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A76960205F753200D807D6 /* fish.storyboard */; };
+		D9A76964205F757400D807D6 /* shrimp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A76962205F757400D807D6 /* shrimp.storyboard */; };
+		D9A76966205F758800D807D6 /* watergrass.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9A76965205F758800D807D6 /* watergrass.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		D9A7694B205F644900D807D6 /* aquariumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = aquariumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A7694F205F644900D807D6 /* aquariumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aquariumUITests.swift; sourceTree = "<group>"; };
 		D9A76951205F644900D807D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A7695E205F750B00D807D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = aquarium/Base.lproj/waterscape.storyboard; sourceTree = "<group>"; };
+		D9A76960205F753200D807D6 /* fish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = fish.storyboard; sourceTree = "<group>"; };
+		D9A76963205F757400D807D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = aquarium/Base.lproj/shrimp.storyboard; sourceTree = "<group>"; };
+		D9A76965205F758800D807D6 /* watergrass.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = watergrass.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 		D9A76923205F644800D807D6 = {
 			isa = PBXGroup;
 			children = (
+				D9A76965205F758800D807D6 /* watergrass.storyboard */,
+				D9A76962205F757400D807D6 /* shrimp.storyboard */,
+				D9A76960205F753200D807D6 /* fish.storyboard */,
+				D9A7695D205F750B00D807D6 /* waterscape.storyboard */,
 				D9A7692E205F644800D807D6 /* aquarium */,
 				D9A76943205F644900D807D6 /* aquariumTests */,
 				D9A7694E205F644900D807D6 /* aquariumUITests */,
@@ -233,8 +245,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9A7693A205F644900D807D6 /* LaunchScreen.storyboard in Resources */,
+				D9A76964205F757400D807D6 /* shrimp.storyboard in Resources */,
 				D9A76937205F644900D807D6 /* Assets.xcassets in Resources */,
 				D9A76935205F644900D807D6 /* Main.storyboard in Resources */,
+				D9A76966205F758800D807D6 /* watergrass.storyboard in Resources */,
+				D9A7695F205F750B00D807D6 /* waterscape.storyboard in Resources */,
+				D9A76961205F753200D807D6 /* fish.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +326,22 @@
 				D9A76939205F644900D807D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D9A7695D205F750B00D807D6 /* waterscape.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9A7695E205F750B00D807D6 /* Base */,
+			);
+			name = waterscape.storyboard;
+			sourceTree = "<group>";
+		};
+		D9A76962205F757400D807D6 /* shrimp.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9A76963205F757400D807D6 /* Base */,
+			);
+			name = shrimp.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -427,7 +459,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7VC9D4VRK;
 				INFOPLIST_FILE = aquarium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calvin.aquarium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +475,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M7VC9D4VRK;
 				INFOPLIST_FILE = aquarium/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.calvin.aquarium;
 				PRODUCT_NAME = "$(TARGET_NAME)";
