@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ibqozsgmbcs" translatesAutoresizingMaskIntoConstraints="NO" id="Vzj-Qb-Yll">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Vzj-Qb-Yll">
                                 <rect key="frame" x="0.0" y="177" width="375" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -26,7 +26,7 @@
                                 <rect key="frame" x="56" y="455" width="262" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="水族百科">
+                                <state key="normal" title="水族小百科">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
@@ -41,6 +41,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ibqozsgmbcs" width="1100" height="599"/>
+        <image name="LaunchScreen" width="2196" height="1190"/>
     </resources>
 </document>
